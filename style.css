@@ -146,7 +146,7 @@ a {
 .info__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  flex-direction: row;
   -moz-column-gap: 32px;
        column-gap: 32px;
   margin-top: 72px;
@@ -183,6 +183,18 @@ a {
   line-height: 100%;
   text-align: left;
 }
+.info__link-big {
+  height: 512px;
+}
+.info__link-small {
+  height: 473px;
+}
+.info__link-biggest {
+  height: 551px;
+}
+.info__link-indent {
+  margin-top: 38px;
+}
 .info__decor-star1 {
   background: none;
   position: absolute;
@@ -214,6 +226,8 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 .game__title {
   padding-top: 94px;
@@ -222,6 +236,91 @@ a {
   font-weight: 700;
   line-height: 100%;
   text-align: left;
+}
+.game__cards {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.game__card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+.game__card-features {
+  width: 600px;
+  padding: 48px 48px 48px 48px;
+  display: flex;
+  flex-direction: column;
+}
+.game__card-title {
+  padding-bottom: 24px;
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: left;
+}
+.game__card-text {
+  padding-bottom: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.game__card-btn {
+  width: 247px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 28px 16px 28px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.game__card-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.game__decor-star1 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 93px;
+  right: 123.79px;
+}
+.game__decor-star2 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 126px;
+  right: 44.91px;
+}
+.game__decor-star3 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 3366px;
+  right: 52px;
+}
+.game__decor-star4 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 3414px;
+  right: 150px;
 }
 
 .footer {
