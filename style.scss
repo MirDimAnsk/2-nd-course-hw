@@ -146,24 +146,43 @@ a {
     }
     &__cards {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
         column-gap: 32px;
         margin-top: 72px;
+        position: absolute;
+        z-index: 2;
     }
     &__link {
-        text-decoration: none;
-        display: inline-block;
         background-color: white;
         border-radius: 30px;
+        box-shadow: 0px 12.612295150756836px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
         &:hover {
             transform: scale(1.1);
         }
     }
     &__link-features {
-        padding: 32px 32px 36px 32px;
-        
+        padding: 32px 32px 36px 32px;        
     }
-
+    &__link-text {
+        width: 112px;
+        padding: 8px 16px 10px 16px;
+        color: rgba(32, 32, 39, 1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        border-radius: 52.58px;
+        background: rgba(247, 247, 247, 1);
+    }
+    &__link-title {
+        padding-top: 16px;
+        color: rgba(32, 32, 39, 1);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: left;
+    }
     &__decor-star1 {
         background: none;
             position: absolute;
@@ -175,6 +194,7 @@ a {
     &__decor-star2 {
         background: none;
             position: absolute;
+            z-index: 1;
             border: none;
             top: 822px;            
             left: 40px;
@@ -182,6 +202,7 @@ a {
     &__decor-star3 {
         background: none;
             position: absolute;
+            z-index: 1;
             border: none;
             top: 770px;            
             left: 25px;
