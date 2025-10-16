@@ -43,6 +43,7 @@
     .header {
         align-items: center;
         position: relative;
+        padding-top: 147px;
         &__title {
             display: none;    
         }
@@ -56,10 +57,10 @@
             display: block;
         }
         &__btn {            
-            width: 285px;
-            height: 55px;
-            font-size: 16px;
-            line-height: 20px;            
+            display: none;            
+        }
+        &__btn-mobile {
+            display: block;
         } 
     }
 
@@ -73,11 +74,11 @@
             display: none;
         }
         &__title {
-            padding-top: 48px;
+            padding-top: 34px;
             font-size: 40px;
         }
         &__cards {
-            margin-top: 48px;
+            margin-top: 36px;
             gap: 24px;
             align-items: center;
         }
@@ -97,19 +98,22 @@
             padding-bottom: 16px;            
         }
         &__card-text {
-            font-size: 16px;
-            line-height: 100%;
+            font-size: 16px;            
             padding-bottom: 32px;
         }
         &__card-btn {
-            width: 285px;
-            height: 55px;
-            font-size: 16px;
-            line-height: 20px;            
+            display: none;           
+        }
+        &__card-btnmob {
+            display: block;           
         }
     }
 
     .footer {
         height: 100px;
+        &__title {
+            padding-top: 43px;
+            font-size: 16px;
+        }
     }
 }

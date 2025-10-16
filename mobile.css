@@ -39,6 +39,7 @@
   .header {
     align-items: center;
     position: relative;
+    padding-top: 147px;
   }
   .header__title {
     display: none;
@@ -53,10 +54,10 @@
     display: block;
   }
   .header__btn {
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    line-height: 20px;
+    display: none;
+  }
+  .header__btn-mobile {
+    display: block;
   }
   .info {
     display: none;
@@ -68,11 +69,11 @@
     display: none;
   }
   .game__title {
-    padding-top: 48px;
+    padding-top: 34px;
     font-size: 40px;
   }
   .game__cards {
-    margin-top: 48px;
+    margin-top: 36px;
     gap: 24px;
     align-items: center;
   }
@@ -93,16 +94,19 @@
   }
   .game__card-text {
     font-size: 16px;
-    line-height: 100%;
     padding-bottom: 32px;
   }
   .game__card-btn {
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    line-height: 20px;
+    display: none;
+  }
+  .game__card-btnmob {
+    display: block;
   }
   .footer {
     height: 100px;
+  }
+  .footer__title {
+    padding-top: 43px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=mobile.css.map */
