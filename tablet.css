@@ -1,1 +1,6 @@
-/*# sourceMappingURL=tablet.css.map */
+@media (min-width: 801px) and (max-width: 1250px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}/*# sourceMappingURL=tablet.css.map */

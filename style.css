@@ -68,26 +68,37 @@ a {
   padding-top: 196px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   position: absolute;
   z-index: 2;
 }
-.header__title {
-  width: 769px;
+.header__title, .header__title-mobile {
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   text-align: left;
+  margin-bottom: 24px;
+}
+.header__title-mobile {
+  line-height: 100%;
+  font-size: 40px;
+  text-align: center;
+  display: none;
 }
 .header__text {
-  width: 720px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  padding-top: 24px;
   padding-bottom: 48px;
+}
+.header__text-mobile {
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  padding-bottom: 36px;
+  display: none;
 }
 .header__text-bold {
   font-weight: 600;
@@ -336,4 +347,69 @@ a {
   font-weight: 600;
   line-height: 100%;
   text-align: center;
+}
+
+@media (min-width: 801px) and (max-width: 1250px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+  }
+  .top__decor-right {
+    display: none;
+  }
+  .top__decor-star2 {
+    width: 35px;
+    height: 35px;
+    top: 97px;
+    left: 37px;
+  }
+  .top__decor-star3 {
+    width: 21px;
+    height: 21px;
+    top: 64px;
+    left: 91px;
+  }
+  .top__decor-star4 {
+    width: 39px;
+    height: 41px;
+    top: 580px;
+    right: 34px;
+  }
+  .top__decor-star5 {
+    width: 18px;
+    height: 18px;
+    top: 557px;
+    right: 86px;
+  }
+  .header {
+    align-items: center;
+    position: relative;
+  }
+  .header__title, .header__title-mobile {
+    display: none;
+  }
+  .header__title-mobile {
+    display: block;
+  }
+  .header__text {
+    display: none;
+  }
+  .header__text-mobile {
+    display: block;
+  }
+  .header__btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
