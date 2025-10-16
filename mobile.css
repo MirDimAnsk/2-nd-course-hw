@@ -1,4 +1,4 @@
-@media (min-width: 350px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 800px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -8,6 +8,9 @@
   }
   .top__decor-right {
     display: none;
+  }
+  .top__decor-star1 {
+    display: block;
   }
   .top__decor-star2 {
     width: 35px;
@@ -54,5 +57,52 @@
     height: 55px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .info {
+    display: none;
+  }
+  .game {
+    height: 3740px;
+  }
+  .game__decor {
+    display: none;
+  }
+  .game__title {
+    padding-top: 48px;
+    font-size: 40px;
+  }
+  .game__cards {
+    margin-top: 48px;
+    gap: 24px;
+    align-items: center;
+  }
+  .game__card {
+    display: none;
+  }
+  .game__card-mobile {
+    display: block;
+    display: flex;
+  }
+  .game__card-features {
+    width: 343px;
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game__card-title {
+    font-size: 32px;
+    padding-bottom: 16px;
+  }
+  .game__card-text {
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 32px;
+  }
+  .game__card-btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer {
+    height: 100px;
   }
 }/*# sourceMappingURL=mobile.css.map */

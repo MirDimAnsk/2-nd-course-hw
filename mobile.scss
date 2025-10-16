@@ -1,4 +1,4 @@
-@media (min-width: 350px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 800px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -9,6 +9,9 @@
         &__decor {
             &-right {
                 display: none;
+            }
+            &-star1 {
+                display: block;
             }
             &-star2 {
                 width: 35px;
@@ -52,11 +55,61 @@
         &__text-mobile {
             display: block;
         }
-        &__btn {
+        &__btn {            
             width: 285px;
             height: 55px;
             font-size: 16px;
-            line-height: 20px;
+            line-height: 20px;            
         } 
+    }
+
+    .info {
+        display: none;
+    }
+
+    .game {
+        height: 3740px;
+        &__decor {
+            display: none;
+        }
+        &__title {
+            padding-top: 48px;
+            font-size: 40px;
+        }
+        &__cards {
+            margin-top: 48px;
+            gap: 24px;
+            align-items: center;
+        }
+        &__card {
+            display: none;
+        }
+        &__card-mobile {
+            display: block;
+            display: flex;
+        }
+        &__card-features {
+            width: 343px;
+            padding: 29.04px 29.04px 32.67px 29.04px;
+        }
+        &__card-title {
+            font-size: 32px;
+            padding-bottom: 16px;            
+        }
+        &__card-text {
+            font-size: 16px;
+            line-height: 100%;
+            padding-bottom: 32px;
+        }
+        &__card-btn {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            line-height: 20px;            
+        }
+    }
+
+    .footer {
+        height: 100px;
     }
 }
