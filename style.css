@@ -1,0 +1,339 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+/* Шапка */
+.top {
+  height: 800px;
+  background-image: url(img/topback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.top__decor-right {
+  background: none;
+  position: absolute;
+  border: none;
+  top: 0px;
+  right: 0px;
+}
+.top__decor-star2 {
+  background: none;
+  position: absolute;
+  border: none;
+  top: 94px;
+  left: 63px;
+}
+.top__decor-star3 {
+  background: none;
+  position: absolute;
+  border: none;
+  top: 69px;
+  left: 156px;
+}
+.top__decor-star4 {
+  background: none;
+  position: absolute;
+  border: none;
+  top: 568px;
+  right: 344px;
+}
+.top__decor-star5 {
+  background: none;
+  position: absolute;
+  border: none;
+  top: 538px;
+  right: 455px;
+}
+
+.header {
+  padding-top: 196px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+}
+.header__title {
+  width: 769px;
+  color: rgb(32, 32, 39);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.header__text {
+  width: 720px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+.header__text-bold {
+  font-weight: 600;
+}
+.header__btn {
+  width: 247px;
+  height: 66px;
+  padding: 16px 28px 16px 28px;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header__btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+
+.info {
+  height: 1470px;
+  background-image: url(img/contentback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.info__top {
+  padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+}
+.info__title {
+  padding-bottom: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.info__text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.info__cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  margin-top: 72px;
+  position: absolute;
+  z-index: 2;
+}
+.info__link {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 12.6122951508px 42.2511901855px -7.57px rgba(0, 0, 0, 0.13);
+}
+.info__link:hover {
+  transform: scale(1.1);
+}
+.info__link-features {
+  padding: 32px 32px 36px 32px;
+}
+.info__link-text {
+  width: 112px;
+  padding: 8px 16px 10px 16px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+}
+.info__link-title {
+  padding-top: 16px;
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: left;
+}
+.info__link-big {
+  height: 512px;
+}
+.info__link-small {
+  height: 473px;
+}
+.info__link-biggest {
+  height: 551px;
+}
+.info__link-indent {
+  margin-top: 38px;
+}
+.info__decor-star1 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 77px;
+  right: 0px;
+}
+.info__decor-star2 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 822px;
+  left: 40px;
+}
+.info__decor-star3 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 770px;
+  left: 25px;
+}
+
+.game {
+  height: 3500px;
+  background-image: url(img/contentback2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.game__title {
+  padding-top: 94px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.game__cards {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.game__card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+.game__card-features {
+  width: 600px;
+  padding: 48px 48px 48px 48px;
+  display: flex;
+  flex-direction: column;
+}
+.game__card-title {
+  padding-bottom: 24px;
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: left;
+}
+.game__card-text {
+  padding-bottom: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.game__card-btn {
+  width: 247px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 28px 16px 28px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.game__card-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.game__decor-star1 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 93px;
+  right: 123.79px;
+}
+.game__decor-star2 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 126px;
+  right: 44.91px;
+}
+.game__decor-star3 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 3366px;
+  right: 52px;
+}
+.game__decor-star4 {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  top: 3414px;
+  right: 150px;
+}
+
+.footer {
+  height: 150px;
+  background-image: url(img/footerback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer__title {
+  padding-top: 61px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
