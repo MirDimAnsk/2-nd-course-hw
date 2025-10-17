@@ -45,3 +45,5 @@ alert(num);
 
 // Задание 8
 
+let age=prompt('Сколько Вам лет?');
+alert(age);
