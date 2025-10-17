@@ -47,3 +47,11 @@ alert(num);
 
 let age=prompt('Сколько Вам лет?');
 alert(age);
+
+// Задание 9
+
+const user={
+   name:'user',
+   age: 25,
+   isAdmin: false
+}
