@@ -55,3 +55,8 @@ const user={
    age: 25,
    isAdmin: false
 }
+
+// Задание 10
+
+let userName=prompt('Введите ваше имя!');
+alert(`Привет, ${userName}!`);
