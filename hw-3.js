@@ -33,3 +33,48 @@ let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
 alert(Number(a) + Number(b));
+
+// Задание 5
+
+let monthNumber=12;
+switch (monthNumber) {
+    case 1:
+        console.log('Месяц: Январь. Сезон: Зима.');       
+        break;
+    case 2:
+        console.log('Месяц: Февраль. Сезон: Зима.');       
+        break;
+    case 3:
+        console.log('Месяц: Март. Сезон: Весна.');       
+        break;
+    case 4:
+        console.log('Месяц: Апрель. Сезон: Весна.');       
+        break;
+    case 5:
+        console.log('Месяц: Май. Сезон: Весна.');       
+        break;
+    case 6:
+        console.log('Месяц: Июнь. Сезон: Лето.');       
+        break;
+    case 7:
+        console.log('Месяц: Июль. Сезон: Лето.');       
+        break;
+    case 8:
+        console.log('Месяц: Август. Сезон: Лето.');       
+        break;
+    case 9:
+        console.log('Месяц: Сентябрь. Сезон: Осень.');       
+        break;
+    case 10:
+        console.log('Месяц: Октябрь. Сезон: Осень.');       
+        break;
+    case 11:
+        console.log('Месяц: Ноябрь. Сезон: Осень.');       
+        break;
+    case 12:
+        console.log('Месяц: Декабрь. Сезон: Зима.');       
+        break;
+    default:
+        console.log('Ошибка! Номер месяца должен быть от 1 до 12!');
+        break;
+}
