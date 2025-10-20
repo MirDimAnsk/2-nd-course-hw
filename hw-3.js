@@ -78,3 +78,15 @@ switch (monthNumber) {
         console.log('Ошибка! Номер месяца должен быть от 1 до 12!');
         break;
 }
+
+// Дополнительное задание 1
+
+let userNumber=Number(prompt('Введите число'));
+if (isNaN(userNumber)) {
+    alert('Вы ввели не число!');
+} else if (userNumber%2===0) {
+    alert('Вы ввели четное число');
+} else {
+    alert('Вы ввели нечетное число');
+}
+
