@@ -1,0 +1,119 @@
+@media (min-width: 320px) and (max-width: 750px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 700px;        
+        &__decor {
+            &-right {
+                display: none;
+            }
+            &-star1 {
+                display: block;
+            }
+            &-star2 {
+                width: 35px;
+                height: 35px;
+                top: 97px;
+                left: 37px;
+            }
+            &-star3 {
+                width: 21px;
+                height: 21px;
+                top: 64px;
+                left: 91px;
+            }
+            &-star4 {
+                width: 39px;
+                height: 41px;
+                top: 580px;
+                right: 34px;
+            }
+            &-star5 {
+                width: 18px;
+                height: 18px;
+                top: 557px;
+                right: 86px;
+            }
+        }
+    }
+
+    .header {
+        align-items: center;
+        position: relative;
+        padding-top: 147px;
+        &__title {
+            display: none;    
+        }
+        &__title-mobile {
+            display: block;
+        }
+        &__text {
+            display: none;
+        }
+        &__text-mobile {
+            display: block;
+        }
+        &__btn {            
+            display: none;            
+        }
+        &__btn-mobile {
+            display: block;
+        } 
+    }
+
+    .info {
+        display: none;
+    }
+
+    .game {
+        height: 3740px;
+        &__decor {
+            display: none;
+        }
+        &__title {
+            padding-top: 34px;
+            font-size: 40px;
+        }
+        &__cards {
+            margin-top: 36px;
+            gap: 24px;
+            align-items: center;
+        }
+        &__card {
+            display: none;
+        }
+        &__card-mobile {
+            display: block;
+            display: flex;
+        }
+        &__card-features {
+            width: 343px;
+            padding: 29.04px 29.04px 32.67px 29.04px;
+        }
+        &__card-title {
+            font-size: 32px;
+            padding-bottom: 16px;            
+        }
+        &__card-text {
+            font-size: 16px;            
+            padding-bottom: 32px;
+        }
+        &__card-btn {
+            display: none;           
+        }
+        &__card-btnmob {
+            display: block;           
+        }
+    }
+
+    .footer {
+        height: 100px;
+        &__title {
+            padding-top: 43px;
+            font-size: 16px;
+        }
+    }
+}

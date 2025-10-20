@@ -1,0 +1,129 @@
+@media (min-width: 751px) and (max-width: 1210px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .top {
+    height: 700px;
+  }
+  .top__decor-right {
+    display: none;
+  }
+  .top__decor-star1 {
+    display: block;
+  }
+  .top__decor-star2 {
+    width: 35px;
+    height: 35px;
+    top: 97px;
+    left: 37px;
+  }
+  .top__decor-star3 {
+    width: 21px;
+    height: 21px;
+    top: 64px;
+    left: 91px;
+  }
+  .top__decor-star4 {
+    width: 39px;
+    height: 41px;
+    top: 580px;
+    right: 34px;
+  }
+  .top__decor-star5 {
+    width: 18px;
+    height: 18px;
+    top: 557px;
+    right: 86px;
+  }
+  .header {
+    align-items: center;
+    position: relative;
+    padding-top: 147px;
+  }
+  .header__title {
+    display: none;
+  }
+  .header__title-mobile {
+    display: block;
+  }
+  .header__text {
+    display: none;
+  }
+  .header__text-mobile {
+    display: block;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__btn-mobile {
+    display: block;
+  }
+  .info {
+    display: none;
+  }
+  .game {
+    height: 2010px;
+  }
+  .game__decor-star2 {
+    top: 126px;
+    right: 15.91px;
+  }
+  .game__decor-star3 {
+    top: 1883px;
+    right: 7px;
+  }
+  .game__decor-star4 {
+    top: 1959px;
+    right: 59px;
+  }
+  .game__title {
+    padding-top: 34px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .game__cards {
+    margin-top: 36px;
+    gap: 24px;
+    align-items: center;
+  }
+  .game__card {
+    display: none;
+  }
+  .game__card-mobile {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+  .game__card-features {
+    justify-content: center;
+    width: 343px;
+    padding: 3.04px 29.04px 2.67px 29.04px;
+  }
+  .game__card-title {
+    font-size: 32px;
+    padding-bottom: 16px;
+  }
+  .game__card-text {
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
+  .game__card-btn {
+    display: none;
+  }
+  .game__card-btnmob {
+    display: block;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__title {
+    padding-top: 43px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 751px) and (max-width: 872px) {
+  .game__decor {
+    display: none;
+  }
+}/*# sourceMappingURL=tablet.css.map */
