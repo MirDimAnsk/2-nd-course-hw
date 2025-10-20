@@ -90,3 +90,16 @@ if (isNaN(userNumber)) {
     alert('Вы ввели нечетное число');
 }
 
+// Дополнительное задание 2
+
+let clientOs;
+clientOs=1;
+if (clientOs===0) {
+    console.log('Установите версию приложения для iOS по ссылке');
+}
+else if (clientOs===1) {
+    console.log('Установите версию приложения для Android по ссылке');
+}
+
+
+    
