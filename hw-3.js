@@ -36,7 +36,7 @@ alert(Number(a) + Number(b));
 
 // Задание 5
 
-let monthNumber=12;
+let monthNumber=12; // выбираем номер года
 switch (monthNumber) {
     case 1:
         console.log('Месяц: Январь. Сезон: Зима.');       
@@ -93,7 +93,7 @@ if (isNaN(userNumber)) {
 // Дополнительное задание 2
 
 let clientOs;
-clientOs=1;
+clientOs=0; // выбираем ОС 0—iOS, 1—Android
 if (clientOs===0) {
     console.log('Установите версию приложения для iOS по ссылке');
 }
@@ -101,5 +101,18 @@ else if (clientOs===1) {
     console.log('Установите версию приложения для Android по ссылке');
 }
 
+// Дополнительное задание 3
 
-    
+clientOs=1; // выбираем ОС 0—iOS, 1—Android
+let clientDeviceYear;
+clientDeviceYear=2017; // выбираем год устройсва
+if (clientOs===0 && clientDeviceYear<2015) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке');
+} else if (clientOs===0 && clientDeviceYear>=2015) {
+    console.log('Установите версию приложения для iOS по ссылке');
+}
+  else if (clientOs===1 && clientDeviceYear<2015) {
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+} else if (clientOs===1 && clientDeviceYear>=2015) {
+    console.log('Установите версию приложения для Android по ссылке');
+}     
