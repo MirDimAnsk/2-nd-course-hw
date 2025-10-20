@@ -181,6 +181,7 @@ a {
   text-align: left;
 }
 .info__cards {
+  width: 1201px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

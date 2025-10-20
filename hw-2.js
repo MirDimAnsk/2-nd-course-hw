@@ -63,7 +63,7 @@ alert(`Привет, ${userName}!`);
 
 // Дополнительное задание
 
-let number=prompt('Загадайте и напишите сюда любое число');
+let number=Number(prompt('Загадайте и напишите сюда любое число'));
 result=number*2;
 alert(`Мы удвоили Ваше число и оно стало таким: ${result}`);
 result=result+10;
