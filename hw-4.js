@@ -24,7 +24,7 @@ const obj={
     "Петя":'400'
 }
 for(let key in obj) {
-    console.log(`${key} — зарплата ${obj[key]} долларов`);
+    console.log(`${key} — зарплата ${obj[key]} долларов.`);
 }
 
 // Задание 5
@@ -34,10 +34,19 @@ for(let n=1000; n>50; n/=2) {
     console.log(n);
     num++;
 }
-console.log(`Количество итераций: ${num}`);
+console.log(`Количество итераций: ${num}.`);
 
 // Задание 6
 
 for (let friday=2; friday<=31; friday+=7) {
     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
 }
+
+// Дополнительное задание 1
+
+let k=100;
+let iterations=0;
+for(k; k>0; k-=7) {    
+    iterations++;
+}
+console.log(`Финальное число: ${k}. Количество итераций: ${iterations}.`);
