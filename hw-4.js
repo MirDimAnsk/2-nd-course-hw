@@ -26,3 +26,13 @@ const obj={
 for(let key in obj) {
     console.log(`${key} — зарплата ${obj[key]} долларов`);
 }
+
+// Задание 5
+
+let n=1000;
+let num=0;
+for(n; n>50; n/=2) {
+    console.log(n);
+    num++;
+}
+console.log(`Количество итераций: ${num}`);
