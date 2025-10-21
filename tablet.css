@@ -107,6 +107,7 @@
   .game__card-text {
     font-size: 16px;
     padding-bottom: 32px;
+    line-height: 19px;
   }
   .game__card-btn {
     display: none;
