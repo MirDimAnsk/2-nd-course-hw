@@ -29,10 +29,15 @@ for(let key in obj) {
 
 // Задание 5
 
-let n=1000;
 let num=0;
-for(n; n>50; n/=2) {
+for(let n=1000; n>50; n/=2) {
     console.log(n);
     num++;
 }
 console.log(`Количество итераций: ${num}`);
+
+// Задание 6
+
+for (let friday=2; friday<=31; friday+=7) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+}
