@@ -153,6 +153,15 @@ a {
     }
 }
 
+.lane {
+    height: 90px;
+    width: 3220px;
+    background: url(img/row.svg);
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: scroll 10s linear infinite; 
+}
+
 .info {    
     height: 1470px;     
     background-image: url(img/contentback.jpg);
@@ -398,5 +407,9 @@ a {
     }
 }
 
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 @import 'tablet';
 @import 'mobile';
