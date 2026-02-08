@@ -1,8 +1,7 @@
 function game1() {
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
     while (true) {
         let userNumber = prompt("Угадай число от 1 до 100");
-        userNumber = Number(userNumber);
         if (isNaN(userNumber)) {
             alert("Пожалуйста, введи число!");
             continue;
