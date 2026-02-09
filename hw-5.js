@@ -13,3 +13,20 @@ function smallerNumber(a, b) {
 }
 
 console.log(smallerNumber(8, 4));
+
+// Задание 2
+// Напишите функцию, которая принимает число и возвращает:
+// строку 'Число четное', если число четное;
+// строку 'Число нечетное', если число нечетное.
+// Подсказка: четность проверяется с помощью условия n % 2 == 0.
+
+function oddEvenNumbers(a) {
+    if (a % 2 == 0) {
+        console.log(`Число четное`);
+    } else {
+        console.log(`Число нечетное`);
+    }  
+}
+
+console.log(oddEvenNumbers(1));
+console.log(oddEvenNumbers(2));
