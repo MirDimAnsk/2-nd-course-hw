@@ -71,6 +71,17 @@ a {
             top: 538px;
             right: 455px;
         }    
+    }
+    &__lane {
+        margin-top: 710px;
+        height: 90px;
+        width: 3220px;
+        background: url(img/row.svg);
+        overflow: hidden;
+        white-space: nowrap; 
+        animation: scroll 10s linear infinite;
+        position: absolute;
+        z-index: 3; 
     }       
 }
 
@@ -151,15 +162,6 @@ a {
         cursor: pointer;
         display: none;          
     }
-}
-
-.lane {
-    height: 90px;
-    width: 3220px;
-    background: url(img/row.svg);
-    overflow: hidden;
-    white-space: nowrap; 
-    animation: scroll 10s linear infinite; 
 }
 
 .info {    
