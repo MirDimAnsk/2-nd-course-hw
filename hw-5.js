@@ -30,3 +30,17 @@ function oddEvenNumbers(a) {
 
 console.log(oddEvenNumbers(1));
 console.log(oddEvenNumbers(2));
+
+// Задание 3
+// Напишите функцию, которая принимает параметром число и выводит в консоль квадрат этого числа.
+// Напишите функцию, которая принимает параметром число и возвращает квадрат этого числа значением — так, чтобы потом это значение можно было использовать.
+
+function squareNumber(a) {
+    console.log(a**2);
+}
+
+console.log(squareNumber(5));
+
+let square = (a) => a**2;
+
+console.log(square(4));
