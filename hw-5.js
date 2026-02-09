@@ -105,3 +105,34 @@ function cubeNumber() {
 }
 
 cubeNumber();
+
+// Задание 7
+// Создайте два объекта, circle1 и circle2, каждый из которых имеет свойство radius.
+// Оба объекта должны иметь:
+// Метод getArea, который возвращает площадь круга, вычисляемую через радиус.
+// Метод getPerimeter, который возвращает периметр окружности.
+
+const circle1 = {
+   radius: 3,
+   Area: getArea,
+   Perimeter: getPerimeter,
+}
+
+const circle2 = {
+   radius: 4,
+   Area: getArea,
+   Perimeter: getPerimeter,
+}
+
+function getArea() {
+    return 3.14159 * this.radius**2;
+}
+
+function getPerimeter() {
+    return 2 * 3.14159 * this.radius;
+}
+
+console.log(circle1.Area());
+console.log(circle1.Perimeter());
+console.log(circle2.Area());
+console.log(circle2.Perimeter());
