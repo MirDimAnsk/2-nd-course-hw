@@ -74,6 +74,7 @@ a {
     }
     &__lane {
         margin-top: 710px;
+        margin-left: 100%;
         height: 90px;
         width: 3220px;
         background: url(img/row.svg);
@@ -411,7 +412,8 @@ a {
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-150%); }
 }
+
 @import 'tablet';
 @import 'mobile';

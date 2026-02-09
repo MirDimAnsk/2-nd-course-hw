@@ -36,6 +36,12 @@
     top: 557px;
     right: 86px;
   }
+  .top__lane {
+    margin-top: 132px;
+    height: 51.34px;
+    width: 1717.4px;
+    background: url(img/row-mobile.svg);
+  }
   .header {
     align-items: center;
     position: relative;
@@ -58,11 +64,6 @@
   }
   .header__btn-mobile {
     display: block;
-  }
-  .lane {
-    height: 51.34px;
-    width: 1717.4px;
-    background: url(img/row-mobile.svg);
   }
   .info {
     display: none;

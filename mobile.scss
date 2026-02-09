@@ -38,6 +38,12 @@
                 right: 86px;
             }
         }
+        &__lane {
+            margin-top: 132px;
+            height: 51.34px;
+            width: 1717.4px;
+            background: url(img/row-mobile.svg);
+        }
     }
 
     .header {
@@ -62,12 +68,6 @@
         &__btn-mobile {
             display: block;
         } 
-    }
-
-    .lane {
-        height: 51.34px;
-        width: 1717.4px;
-        background: url(img/row-mobile.svg);
     }
 
     .info {
