@@ -10,3 +10,11 @@ for (let i = 0; i < arr.length; i++) {
         break;
     }
 }
+
+// Задание 2
+// Дан массив: [1, 5, 4, 10, 0, 3].
+// Найдите индекс значения 4 в этом массиве.
+
+const arr2 = [1, 5, 4, 10, 0, 3];
+const index = arr2.indexOf(4);
+console.log(index);
