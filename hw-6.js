@@ -18,3 +18,11 @@ for (let i = 0; i < arr.length; i++) {
 const arr2 = [1, 5, 4, 10, 0, 3];
 const index = arr2.indexOf(4);
 console.log(index);
+
+// Задание 3
+// Дан массив чисел: [1, 3, 5, 10, 20].
+// С помощью метода join выведите элементы массива через пробел (пустую строку ' ').
+
+const arr3 = [1, 3, 5, 10, 20];
+const result = arr3.join(' ');
+console.log(result);
