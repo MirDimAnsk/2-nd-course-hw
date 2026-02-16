@@ -26,3 +26,16 @@ console.log(index);
 const arr3 = [1, 3, 5, 10, 20];
 const result = arr3.join(' ');
 console.log(result);
+
+// Задание 4
+// С помощью вложенных циклов создайте многомерный массив вида: 
+// [[1, 1, 1], [1, 1, 1], [1, 1, 1]].
+
+let arr4 = [];
+for (let i = 0; i < 3; i++) {
+    arr4[i] = [];
+    for (let j = 0; j < 3; j++) {
+        arr4[i][j] = 1;
+    }
+}
+console.log(arr4);
