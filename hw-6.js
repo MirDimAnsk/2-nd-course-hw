@@ -80,3 +80,11 @@ if (userInput !== null) {
 const arr8 = 'abcdef';
 const arr9 = arr8.split('').reverse().join('');
 console.log(arr9);
+
+// Задание 9
+// Дан массив: [[1, 2, 3],[4, 5, 6]]. 
+// Выведите в консоль массив вида: [1, 2, 3, 4, 5, 6].
+
+const arr10 = [[1, 2, 3], [4, 5, 6]];
+const arr11 = [...arr10[0], ...arr10[1]];
+console.log(arr11);
