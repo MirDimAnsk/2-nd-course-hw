@@ -56,3 +56,20 @@ arr6.sort();
 arr6.pop();
 console.log(arr6);
 
+// Задание 7
+// Дан массив: [9, 8, 7, 6, 5].
+// Попросите пользователя угадать число с помощью метода prompt. 
+// Если значение, которое ввел пользователь, есть в массиве, выведите в alert «Угадал», в противном случае — «Не угадал».
+
+const arr7 = [9, 8, 7, 6, 5];
+let userInput = prompt("Угадайте число от 5 до 9");
+if (userInput !== null) {
+    let userNumber = Number(userInput);
+    if (!isNaN(userNumber) && arr7.includes(userNumber)) {
+        alert("Угадал");
+    } else {
+        alert("Не угадал");
+    }
+} else {
+    alert("Игра отменена");
+}
