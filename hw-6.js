@@ -88,3 +88,18 @@ console.log(arr9);
 const arr10 = [[1, 2, 3], [4, 5, 6]];
 const arr11 = [...arr10[0], ...arr10[1]];
 console.log(arr11);
+
+// Задание 10
+// Создайте массив с произвольными числами (диапазон от 1 до 10).
+// Переберите его с помощью цикла for.
+// В каждой итерации выведите в консоль сумму текущего и следующего элементов массива.
+
+const arr12 = [];
+for (let i = 0; i < 10; i++) {
+    arr12.push(Math.floor(Math.random() * 10) + 1);
+}
+console.log(arr12);
+for (let i = 0; i < arr12.length - 1; i++) {
+    const sum = arr12[i] + arr12[i + 1];
+    console.log(`${arr12[i]} + ${arr12[i + 1]} = ${sum}`);
+}
