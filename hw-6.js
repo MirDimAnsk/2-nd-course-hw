@@ -125,3 +125,14 @@ function getLength(strings) {
 const words = ['Привет', 'Пока', 'Вчера', 'Сегодня'];
 const lengths = getLength(words);
 console.log(lengths);
+
+// Задание 13
+// Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив, содержащий только отрицательные значения.
+
+function negativeNumbers(numbers) {
+    return numbers.filter(num => num < 0);
+}
+
+const arr14 = [1, -2, 3, -4, 5, -6, 0, -8, 5];
+const negatives = negativeNumbers(arr14);
+console.log(negatives);
