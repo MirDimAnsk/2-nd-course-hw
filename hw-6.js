@@ -73,3 +73,10 @@ if (userInput !== null) {
 } else {
     alert("Игра отменена");
 }
+
+// Задание 8
+// Дана строка: 'abcdef'. Выведите в консоль 'fedcba'.
+
+const arr8 = 'abcdef';
+const arr9 = arr8.split('').reverse().join('');
+console.log(arr9);
