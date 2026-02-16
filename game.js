@@ -23,47 +23,41 @@ function game1() {
 }
 
 function game2() {
-    const operator = ['+', '-', '*', '/'];    
-    let operation = operator[Math.floor(Math.random() * operator.length)];
+    const operators = ['+', '-', '*', '/'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
     let a = Math.floor(Math.random() * 10) + 1;
-    let b = Math.floor(Math.random() * 10) + 1;
-    let userInput, userNumber, result;
-    switch (operation) {
-        case '+':                     
-            userInput = prompt (`Реши задачу: ${a} + ${b} введи ответ ниже`);
-            userNumber = Number (userInput);           
-            result = a + b;                    
-        break;
-        case '-':            
-            userInput = prompt (`Реши задачу: ${a} - ${b} введи ответ ниже`);           
-            userNumber = Number (userInput);
-            result = a - b;                       
-        break;
-        case '*':            
-            userInput = prompt (`Реши задачу: ${a} * ${b} введи ответ ниже`);
-            userNumber = Number (userInput);            
-            result = a * b;
-        break;
-        case '/':            
-            userInput = prompt (`Реши задачу ${a} / ${b} введи ответ ниже`);
-            userNumber = Number (userInput);            
-            result = a / b;            
-        break;
+    let b = Math.floor(Math.random() * 10) + 1;    
+    if (operator === '/') {        
+        a = b * (Math.floor(Math.random() * 10) + 1);
     }
+    let correctAnswer;
+    switch (operator) {
+        case '+': correctAnswer = a + b; break;
+        case '-': correctAnswer = a - b; break;
+        case '*': correctAnswer = a * b; break;
+        case '/': correctAnswer = a / b; break;
+    }
+    let userInput, userNumber;
     while (true) {
+        userInput = prompt(`Реши задачу: ${a} ${operator} ${b} = ?`);
         if (userInput === null) {
             alert("Игра отменена.");
-            break;
-        }    
-        if (isNaN(userNumber)) {
-            alert("Игра отменена! Пожалуйста, вводи числа!");
-            break;            
-        } else if (userNumber === result) {
-                alert("Поздравляю, твой ответ верен!");
-                break;
-                } else {
-                    alert(`Ты ошибся, правильный ответ: ${result}!`);
-                    break;
-                    }
+            return;
+        }
+        if (userInput.trim() === '') {
+            alert("Ответ не может быть пустым. Попробуй снова.");
+            continue;
+        }
+        userNumber = Number(userInput);
+        if (isNaN(userNumber) || !isFinite(userNumber)) {
+            alert("Ошибка! Введи корректное число.");
+            continue;
+        }
+        break;
+    }
+    if (userNumber === correctAnswer) {
+        alert("Поздравляю, твой ответ верен!");
+    } else {
+        alert(`Ты ошибся, правильный ответ: ${correctAnswer}!`);
     }
 }
