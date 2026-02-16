@@ -114,3 +114,14 @@ function getSquares(numbers) {
 const arr13 = [1, 2, 3, 4, 5];
 const squares = getSquares(arr13);
 console.log(squares);
+
+// Задание 12
+// Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов.
+
+function getLength(strings) {
+    return strings.map(str => str.length);
+}
+
+const words = ['Привет', 'Пока', 'Вчера', 'Сегодня'];
+const lengths = getLength(words);
+console.log(lengths);
