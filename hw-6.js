@@ -103,3 +103,14 @@ for (let i = 0; i < arr12.length - 1; i++) {
     const sum = arr12[i] + arr12[i + 1];
     console.log(`${arr12[i]} + ${arr12[i + 1]} = ${sum}`);
 }
+
+// Задание 11
+// Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
+
+function getSquares(numbers) {
+    return numbers.map(num => num * num);
+}
+
+const arr13 = [1, 2, 3, 4, 5];
+const squares = getSquares(arr13);
+console.log(squares);
